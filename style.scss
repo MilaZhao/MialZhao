@@ -1,0 +1,123 @@
+$parallax_text_size:50px;
+$parallax_text_color:#eee;
+
+
+html,
+        body {
+            position: relative;
+            height: 100%;
+        }
+
+        .swiper-container body {
+            background: #eee;
+            font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            color: #000;
+            margin: 0;
+            padding: 0;
+        }
+
+        :root {
+            --swiper-theme-color: white;
+        }
+
+        .banner {
+            width: 100%;
+
+                .swiper-container {
+                    width: 100%;
+                    height: 100%;
+
+                            .bg_1,
+                            .bg_2,
+                            .bg_3,
+                            .bg_4 {
+                                width: 100%;
+                                // height: calc(100vh - 56px);
+                                background-size: cover;
+                                background-position: center;
+                            }
+
+                            .bg_1 {
+                                background-image: url("https://www.theglobeandmail.com/resizer/3N9KAzNaqNjZMAOgtBtqigN1uzc=/1500x0/filters:quality(80)/arc-anglerfish-tgam-prod-tgam.s3.amazonaws.com/public/OLPCJSNZXRANDJSK6WHGOV45BU");
+                            }
+                            .bg_2 {
+                                background-image: url("https://www.stickybandits.nl/.uc/i9771c279010290420200cb7daf027ee6348e4de3c1e60301c000/cooper.jpg");
+                            }
+                            .bg_3 {
+                                background-image: url("https://static.wixstatic.com/media/bcc193_541f46506b23412fb041b4768d4c14a7~mv2.jpg/v1/fit/w_2500,h_1330,al_c/bcc193_541f46506b23412fb041b4768d4c14a7~mv2.jpg");
+                            }
+                            .bg_4 {
+                                background-image: url("https://cdn.shopify.com/s/files/1/0271/2148/3878/files/All-Terrain_Tires_Slider_Image_BW_1400x.png?v=1589563540");
+                            }
+                }       
+        }
+
+        .container py-5{
+            .row{
+                .col-12 col-lg-4 mb-3{
+                    .card {
+                        width: 100%;
+                    }
+                    img{
+                        width: 100%;
+                    }
+                }
+            }
+        }
+        
+
+        
+        #parallax {
+            height: 6000px;
+            position: relative;
+
+                .background {
+                    width: 100%;
+                    height: 100vh;
+                    background-image: url("https://cdn.shopify.com/s/files/1/0271/2148/3878/files/Sand_Tires_Slider_Image_BW_1400x.png?v=1589563447");
+                    background-size: cover;
+                    background-position: center;
+                    position: sticky;
+                    top: 0;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    .parallax_text{
+                        position: absolute;
+                        text-align: center;
+                        font-size: $parallax_text_size;
+                        font-weight: 900;
+                        color: $parallax_text_color;
+                    }
+                }
+
+        }
+
+        #into {
+            width: 100%;
+            h1{
+                color: black;
+
+                &:hover{
+                    color: blue;
+                }
+            }
+        }
+
+        footer {
+            width: 100%;
+            height: 100px;
+            color: beige;
+            background-color: #000;
+            text-align: center;
+        }
+
+        @media(max-width: 992px) {
+            /* .banner {
+                height: 500px;
+
+            } */
+
+        }

@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap</title>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+        integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+
+    <!-- Swiper -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+
+    <!-- SCSS -->
+    <link rel="stylesheet" href="./style.css">
+
+    <!-- <style>
+        html,
+        body {
+            position: relative;
+            height: 100%;
+        }
+
+        .swiper-container body {
+            background: #eee;
+            font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            color: #000;
+            margin: 0;
+            padding: 0;
+        }
+
+        .banner {
+            width: 100%;
+            /* height: calc(100vh - 56px); */
+        }
+
+        :root {
+            --swiper-theme-color: white;
+        }
+
+
+        .swiper-container {
+            width: 100%;
+            height: 100%;
+        }
+
+        .bg_1,
+        .bg_2,
+        .bg_3,
+        .bg_4 {
+            width: 100%;
+            height: calc(100vh - 56px);
+            background-size: cover;
+            background-position: center;
+        }
+
+        .bg_1 {
+            background-image: url("https://www.theglobeandmail.com/resizer/3N9KAzNaqNjZMAOgtBtqigN1uzc=/1500x0/filters:quality(80)/arc-anglerfish-tgam-prod-tgam.s3.amazonaws.com/public/OLPCJSNZXRANDJSK6WHGOV45BU");
+        }
+
+        .bg_2 {
+            background-image: url("https://www.stickybandits.nl/.uc/i9771c279010290420200cb7daf027ee6348e4de3c1e60301c000/cooper.jpg");
+        }
+
+        .bg_3 {
+            background-image: url("https://static.wixstatic.com/media/bcc193_541f46506b23412fb041b4768d4c14a7~mv2.jpg/v1/fit/w_2500,h_1330,al_c/bcc193_541f46506b23412fb041b4768d4c14a7~mv2.jpg");
+        }
+
+        .bg_4 {
+            background-image: url("https://cdn.shopify.com/s/files/1/0271/2148/3878/files/All-Terrain_Tires_Slider_Image_BW_1400x.png?v=1589563540");
+        }
+
+        .card {
+            width: 100%;
+        }
+        img{
+            width: 100%;
+        }
+        #parallax {
+            height: 6000px;
+            position: relative;
+        }
+
+        .background {
+            width: 100%;
+            height: 100vh;
+            background-image: url("https://cdn.shopify.com/s/files/1/0271/2148/3878/files/Sand_Tires_Slider_Image_BW_1400x.png?v=1589563447");
+            background-size: cover;
+            background-position: center;
+
+            position: sticky;
+            top: 0;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .parallax_text {
+            position: absolute;
+            text-align: center;
+            font-size: 50px;
+            font-weight: 900;
+            color: #eee;
+        }
+
+        #into {
+            width: 100%;
+        }
+
+        footer {
+            width: 100%;
+            height: 100px;
+            color: beige;
+            background-color: #000;
+            text-align: center;
+        }
+
+        @media(max-width: 992px) {
+            /* .banner {
+                height: 500px;
+
+            } */
+
+        }
+    </style> -->
+</head>
+
+<body>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Tire</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Features</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Pricing</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                </li>
+
+            </ul>
+        </div>
+    </nav>
+    <!-- Slider -->
+
+    <main class="banner">
+        <section class="swiper-container">
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide">
+                    <div class="bg_1 d-lg-block d-none"></div>
+                    <img src="https://www.theglobeandmail.com/resizer/3N9KAzNaqNjZMAOgtBtqigN1uzc=/1500x0/filters:quality(80)/arc-anglerfish-tgam-prod-tgam.s3.amazonaws.com/public/OLPCJSNZXRANDJSK6WHGOV45BU"
+                        class="d-block d-lg-none w-100" alt="Slide 1">
+                </div>
+                <div class="swiper-slide">
+                    <div class="bg_2 d-lg-block d-none"></div>
+                    <img src="https://www.investopedia.com/thmb/0OBRZ7eAdkxNfDtKdV2QEft6Jj4=/4032x2268/filters:fill(auto,1)/tire-rubber-products---group-of-new-tires-for-sale-at-a-tire-store--670755504-5a691e31d8fdd50037d72ee9.jpg"
+                        class="d-block d-lg-none w-100" alt="Slide 2">
+                </div>
+                <div class="swiper-slide">
+                    <div class="bg_3 d-lg-block d-none"></div>
+                    <img src="https://static.wixstatic.com/media/bcc193_541f46506b23412fb041b4768d4c14a7~mv2.jpg/v1/fit/w_2500,h_1330,al_c/bcc193_541f46506b23412fb041b4768d4c14a7~mv2.jpg"
+                        class="d-block d-lg-none w-100" alt="Slide 3">
+                </div>
+
+                <!-- <div class="swiper-slide">
+                    <div class="bg_4 d-lg-block d-none"></div>
+                    <img src="https://cdn.shopify.com/s/files/1/0271/2148/3878/files/All-Terrain_Tires_Slider_Image_BW_1400x.png?v=1589563540"
+                        class="d-block d-lg-none w-100" alt="Slide 4">
+                </div> -->
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-button-next"></div>
+            <!-- Add Arrows -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+        </section>
+
+    </main>
+
+
+
+    <!-- 3 Cards -->
+    <section>
+        <div class="container py-5">
+            <div class="row">
+                <div class="col-12 col-lg-4 mb-3">
+                    <div class="card">
+                        <img src="https://wheelprospowersports.com/content/uploads/2019/10/MM_pi_l.jpg"
+                            class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">MOTOMAX</h5>
+                            <p class="card-text">The EFX MotoMax ATV tire is an all-purpose mud tire designed to
+                                perform...</p>
+                            <a href="#" class="btn btn-dark">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-lg-4 mb-3">
+                    <div class="card">
+                        <img src="https://wheelprospowersports.com/content/uploads/2019/10/MM26_pi_l_1.jpg"
+                            class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">MOTOMTC</h5>
+                            <p class="card-text">The MotoForce All-Terrain ATV tire by EFX Performance Tires is the
+                                single...</p>
+                            <a href="#" class="btn btn-dark">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-lg-4 mb-3">
+                    <div class="card">
+                        <img src="https://wheelprospowersports.com/content/uploads/2019/10/MH_pi_l.jpg"
+                            class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">MOTOHAVOK</h5>
+                            <p class="card-text">Innovating the world’s best ATV/UTV ag-style tire is no easy
+                                accomplishment...</p>
+                            <a href="#" class="btn btn-dark">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Parallax -->
+    <!-- class="d-flex justify-content-center align-items-center" -->
+    <section id="parallax">
+        <div class="background">
+            <p class="parallax_text lax"
+                data-lax-opacity="(document.querySelector('#parallax').offsetTop) 0,(document.querySelector('#parallax').offsetTop+1000) 1, (document.querySelector('#parallax').offsetTop+2000) 0">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla temporibus error
+                odio assumenda dolores soluta eligendi autem tempore est maiores dolor, molestias saepe ratione qui,
+                maxime officiis rem, neque quo!</p>
+
+                <p class="parallax_text lax"
+                data-lax-opacity="(document.querySelector('#parallax').offsetTop+2000) 0,(document.querySelector('#parallax').offsetTop+3000) 1, (document.querySelector('#parallax').offsetTop+4000) 0">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla temporibus error
+                odio assumenda dolores soluta eligendi autem tempore est maiores dolor, molestias saepe ratione qui,
+                maxime officiis rem, neque quo!</p>
+
+                <p class="parallax_text lax"
+                data-lax-opacity="(document.querySelector('#parallax').offsetTop+4000) 0,(document.querySelector('#parallax').offsetTop+5000) 1, (document.querySelector('#parallax').offsetTop+6000) 0">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla temporibus error
+                odio assumenda dolores soluta eligendi autem tempore est maiores dolor, molestias saepe ratione qui,
+                maxime officiis rem, neque quo!</p>
+        </div>
+    </section>
+
+
+    <!-- 內容 -->
+    <section id="into" class="py-5">
+        <h1 class="text-center mb-5">Tire title</h1>
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-12 col-lg-6 mb-3">
+                    <img class="w-100 h-100"
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRmEI_azi387WssxGMhb8aSgaeDDidc9II9guea1K9BXNirTpKH&usqp=CAU"
+                        alt="">
+                </div>
+                <div class="col-12 col-lg-6">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, id amet
+                    quidem eum
+                    voluptas autem delectus aut recusandae in ipsa, at error, dolore veniam ea fugit facere enim culpa
+                    sit.
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Excepturi labore omnis incidunt error
+                    quis. Odit deleniti mollitia dolores. Fugit odio architecto voluptas odit, ut cumque error numquam
+                    consequuntur a. Fugit?</p>
+                    <a href="#" class="btn btn-outline-dark">Go somewhere</a>
+                </div>
+                
+            </div>
+
+            <div class="row">
+                <div class="col-12 col-lg-6 order-1 order-lg-0">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, id amet
+                        quidem eum
+                        voluptas autem delectus aut recusandae in ipsa, at error, dolore veniam ea fugit facere enim culpa
+                        sit.
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Excepturi labore omnis incidunt error
+                        quis. Odit deleniti mollitia dolores. Fugit odio architecto voluptas odit, ut cumque error numquam
+                        consequuntur a. Fugit?</p>
+                        <a href="#" class="btn btn-outline-dark">Go somewhere</a>
+                </div>
+                <div class="col-12 col-lg-6 mb-3">
+                    <img class="w-100 h-100"
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRmEI_azi387WssxGMhb8aSgaeDDidc9II9guea1K9BXNirTpKH&usqp=CAU"
+                        alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>僅供教學練習，如有冒犯請撥0912-345-678</footer>
+
+
+
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/lax.js" ></script>
+    <!-- Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+        integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+        integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+        crossorigin="anonymous"></script>
+
+
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+
+            // autoplay: {
+            //     delay: 2500,
+            //     disableOnInteraction: false,
+            // },
+            keyboard: {
+                enabled:true,
+            },
+            slidesPerView: 1,
+            loop: true,
+            //autoHeight: true,// 會吃掉d-lg-block的高度(原本設在.bg_1,.bg_2,.bg_3高度) ; CSS 的.bg_1,.bg_2,.bg_3 要再重設高度 calc() 跟baneer一樣
+        });
+
+
+
+        //初始化 
+        window.onload = function () {
+            lax.setup() // init
+
+            const updateLax = () => {
+                lax.update(window.scrollY)
+                window.requestAnimationFrame(updateLax)
+            }
+
+            window.requestAnimationFrame(updateLax)
+        }
+    </script>
+
+
+</body>
+
+</html>
